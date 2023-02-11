@@ -11,7 +11,7 @@ Output: [3, 2, 1]
 
 def ReverseArray(array):
   return array[::-1]
-array1 = [1,2,3]  
+# array1 = [1,2,3]  
 print(ReverseArray(array1))
 
 
