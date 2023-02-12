@@ -14,11 +14,19 @@ Output: [['sp', 'ak', 'leo'], ['17', '17', '10']]
 
 '''
 
-# Solution:
+# Solution:(copied)
 
-
-
-
+def updation(list1):
+   ls=[]
+   lc=[]
+   for i in range(len(list1)):
+       for j in range(len(list1[i].split())):
+           if(j==0):
+               ls.append(list1[i].split()[j])
+           elif (j==1):
+               lc.append(list1[i].split()[j])
+   return ls,lc
+print(list(updation(list1)))
 
 
 
