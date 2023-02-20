@@ -1,6 +1,14 @@
 # intermediate
 '''
+Return a dictionary containing the frequency of each of the characters in a given string, string1.
 
+Example 1: 
+Input:  string1 = "hello"
+Output: {'h': 1, 'e': 1, 'l': 2, 'o': 1}
+ 
+Example 2: 
+Input:  string1 = "blablabla"
+Output: {'b': 3, 'l': 3, 'a': 3}
 '''
 
 # Solution:
