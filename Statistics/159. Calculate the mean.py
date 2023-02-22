@@ -19,3 +19,11 @@ def Mean(speed):
   
 print(Mean(speed))
 
+# ============ OR ==============
+
+import statistics
+
+def Mean(speed):
+  return statistics.mean(speed)
+  
+print(Mean(speed))
