@@ -10,3 +10,12 @@ Input: speed = [126,100,129,139]
 Output: 123.5
 '''
 # Solution:
+
+import statistics
+def Mean(speed):
+  s = sum(speed)
+  l = len(speed)
+  return (s/l)
+  
+print(Mean(speed))
+
