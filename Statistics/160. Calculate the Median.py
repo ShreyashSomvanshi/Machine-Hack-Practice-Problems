@@ -10,9 +10,17 @@ Input: data1 = [95,46,90,99,53]
 Output: 90
 '''
 
-# My Solution:
+# Short Solution:
 import statistics
+  
+def mediann(data1):  
+  return statistics.median(data1)
 
+print(mediann(data1))
+
+# =============================== OR ====================================
+
+# My Solution:
 def median(data1):  
 # First sort in ascending order; Median = {(n + 1) / 2}th value for n=even,
 # Median = n/2 for n=odd but adjust by -1 as indices start with 0
