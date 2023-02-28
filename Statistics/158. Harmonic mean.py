@@ -27,3 +27,12 @@ def harmonicmean(data1):
   
 print(harmonicmean(data1))
   
+# ============== OR =================
+
+import numpy as np
+import statistics
+
+def harmonicmean(data1):
+  return statistics.harmonic_mean(data1)
+  
+print(harmonicmean(data1))
