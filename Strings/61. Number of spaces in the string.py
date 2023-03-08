@@ -11,6 +11,13 @@ Output: 6
 '''
 
 # Solution:
+
+def whiteSpaces(string1):
+ return string1.count(' ')
+print(whiteSpaces(string1))
+
+# ============ OR =======================
+
 def whiteSpaces(string1):
   u=string1.split(' ')
   y=len(u)
