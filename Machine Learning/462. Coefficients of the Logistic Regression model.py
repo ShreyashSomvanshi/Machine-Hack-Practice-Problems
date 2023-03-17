@@ -22,12 +22,11 @@ Output: [[0.266102   0.41815491]]
 import pandas as pd
 from sklearn.linear_model import LogisticRegression
 from sklearn.model_selection import train_test_split
-def coefff(x,y):
-  Xtrain,Xtest,ytrain,ytest=train_test_split(x,y,test_size=0.3)
+def coefff(X,y):
+  Xtrain,Xtest,ytrain,ytest=train_test_split(X,y,test_size=0.3, random_state=10)
   model = LogisticRegression()
   model.fit(Xtrain,ytrain)
   cof=model.coef_
   return cof
   
 print(coefff(X,y))
-
