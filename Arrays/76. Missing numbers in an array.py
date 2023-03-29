@@ -12,9 +12,21 @@ Input: array1 = [1,2,3,6,7]
 Output: [4, 5]
 '''
 
-# Solution:
+# Solution: By ChatGPT
+
+def MissingElements(array1):
+    missing_elements = []
+    for i in range(len(array1)-1):
+        diff = array1[i+1] - array1[i]
+        if diff > 1:
+            for j in range(1, diff):
+                missing_elements.append(array1[i]+j)
+    return missing_elements
 
 
+  
+print(MissingElements(array1))
+    
 
 # My approach:
 
