@@ -16,13 +16,21 @@ B = [[2,2,2],[2,2,2],[2,2,2]]
 Output: [[3, 3, 3], [3, 3, 3], [3, 3, 3]]
 '''
 
-# Solution:
+# Solution: By Chat GPT
+def matrix_additon(matrix1,matrix2):
+  result = [[0, 0, 0], [0, 0, 0], [0, 0, 0]]
+  for i in range(len(A)):
+    for j in range(len(A[0])):
+      result[i][j] = A[i][j] + B[i][j]
+
+  return result
+  
+print(matrix_additon(A,B))
 
 
 
 
-
-# My approach: Gives correct output but not accepted.
+# My approach: Wrong
 '''
 # A = [[1,1,1],[1,1,1],[1,1,1]]
 # B = [[1,1,1],[1,1,1],[1,1,1]]
