@@ -31,7 +31,7 @@ def r2_squared(X_train,X_test,y_train,y_test):
   model = LinearRegression()
   model.fit(X_train, y_train)
   d=model.predict(X_test)
-  r = r2_score(y_test,d)
+  r = r2_score(y_test,d) # r square error 
   return r
   
 print(r2_squared(X_train,X_test,y_train,y_test))
