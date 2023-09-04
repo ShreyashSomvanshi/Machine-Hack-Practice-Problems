@@ -11,6 +11,15 @@ Output: dict_items([('Tallest waterfall', 'Angel Falls'), ('Longest river', 'Nil
 '''
 
 # Soln:
+
+## New: 25ms
+def dictionaryItems(dict1):
+  print(dict1.items())
+  
+dictionaryItems(dict1)
+
+
+### 26ms
 def dictionaryItems(dict1):
   return dict1.items()
   
