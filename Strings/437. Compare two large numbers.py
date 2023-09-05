@@ -13,3 +13,16 @@ a = 1723657863287
 b = 1746871
 Output: 2
 '''
+class Solution:
+  def check(self, a,b):
+    if a < b:
+      return 1
+    elif a > b:
+      return 2
+    elif a == b:
+      return 3
+  
+sol = Solution()
+print(sol.check(a,b))
+      
+    
