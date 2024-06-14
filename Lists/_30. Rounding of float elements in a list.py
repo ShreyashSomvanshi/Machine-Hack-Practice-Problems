@@ -3,7 +3,7 @@ Consider a list as list1 of N-elements containing integers and floats. Now write
 all the float elements to the closest integers and print the updated list in ascending order.
 
 Example 1:
-Input: list1 =[1, 2.234, 4.765, 9.12, 3, 3.88,&amp;nbsp;8.45]
+Input: list1 =[1, 2.234, 4.765, 9.12, 3, 3.88, 8.45]
 Output: [1, 2, 3, 4, 5, 8, 9]
 
 Example 2:
@@ -25,4 +25,13 @@ def conversion_of_float_to_int(list1):
       pass
   return sorted(h)
   
+## 2:
 
+# Soln:
+def conversion_of_float_to_int(list1):
+  p = []
+  for i in list1:
+    p.append(round(i))
+  return sorted(p)
+  
+print(conversion_of_float_to_int(list1))
