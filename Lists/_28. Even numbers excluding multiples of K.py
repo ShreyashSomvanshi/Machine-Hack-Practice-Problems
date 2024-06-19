@@ -23,3 +23,16 @@ def evenExpectN(list1,K):
   return u
   
 print(evenExpectN(list1,K))
+
+
+# Soln2:
+def evenExpectN(list1,K):
+    return [num for num in list1 if num % 2 == 0 and num % K != 0]
+
+print(evenExpectN(list1,K))
+
+# Soln3:
+def filter_even_not_divisible_by_K(list1, K):
+    return (num for num in list1 if num % 2 == 0 and num % K != 0)
+
+print(list(filter_even_not_divisible_by_K(list1, K)))
