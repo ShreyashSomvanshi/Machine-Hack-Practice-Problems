@@ -19,3 +19,14 @@ def split_list_into_buckets(input_list, bucket_size):
 
 output = split_list_into_buckets(list1, B)
 print(output)
+
+
+# Soln:
+def split_list_into_buckets(input_list, bucket_size):
+    output = []
+    for i in range(0, len(input_list), bucket_size):
+        output.append(input_list[i:i + bucket_size])
+    return output
+
+output = split_list_into_buckets(list1, B)
+print(output)
